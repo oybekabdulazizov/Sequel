@@ -23,6 +23,7 @@ class UsersRepository {
         records.push(attributes);
 
         await this.writeAll(records);
+        return attributes;
     }
 
 
@@ -94,4 +95,4 @@ const test = async () => {
     console.log(record);
 }
 
-module.exports = new UsersRepository('users.json');
+module.exports = new UsersRepository('./data/users.json');
