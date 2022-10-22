@@ -1,6 +1,8 @@
 const express = require('express');
 const axios = require('axios');
 
+const usersRepo = require('./repositories/users');
+
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
@@ -32,9 +34,19 @@ app.get('/signup', (req, res) => {
     `);
 });
 
-app.post('/signup', (req, res, next) => {
-    console.log(req.body);
-    res.send(req.body);
+app.post('/signup', async (req, res, next) => {
+    const { email, password, passwordConfirmation } = req.body;
+    const existingUser = await usersRepo.getOneBy({ email });
+
+    if (existingUser) {
+        return res.send('Email in use.');
+    }
+
+    if (password !== passwordConfirmation) {
+        return res.send('The passwords must match.');
+    }
+
+    res.send("Account created.");
 });
 
 app.listen('3002', () => {
