@@ -39,6 +39,7 @@ app.get('/signup', (req, res) => {
     `);
 });
 
+
 app.post('/signup', async (req, res, next) => {
     const { email, password, passwordConfirmation } = req.body;
     const existingUser = await usersRepo.getOneBy({ email });
@@ -73,6 +74,26 @@ app.get('/signin', (req, res) => {
 app.get('/signout', (req, res) => {
     req.session = null;
     res.send('Signed out.');
+});
+
+
+app.post('/signin', async (req, res, next) => {
+    const { email, password } = req.body;
+    const existingUser = await usersRepo.getOneBy({ email });
+    console.log(existingUser);
+    if (!existingUser) {
+        return res.send('Email does not exist.');
+    }
+
+    const validPassword = await usersRepo.comparePasswords(existingUser.password, password);
+
+    if (!validPassword) {
+        return res.send('Incorrect password.');
+    }
+    
+    req.session.userId = existingUser.id;
+
+    res.send("Signed in.");
 });
 
 
