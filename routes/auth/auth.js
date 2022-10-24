@@ -1,30 +1,32 @@
 const express = require('express');
 const router = express.Router();
 
+const { check, validationResult } = require('express-validator');
 const signupTemplate = require('../../views/auth/signup');
 const signinTemplate = require('../../views/auth/signin');
 const usersRepo = require('../../repositories/users');
+const { requireEmail, 
+        requirePassword, 
+        requirePasswordConfirmation, 
+        requireEmailExists, 
+        requireValidPassword, } = require('./validators');
 
 router.get('/signup', (req, res) => {
     res.send(signupTemplate({ req }));
 });
 
 
-router.post('/signup', async (req, res, next) => {
-    const { email, password, passwordConfirmation } = req.body;
-    const existingUser = await usersRepo.getOneBy({ email });
+router.post('/signup', [requireEmail, requirePassword, requirePasswordConfirmation], async (req, res, next) => {
+    const errors = validationResult(req);
+    console.log(errors);
 
-    if (existingUser) {
-        return res.send('Email in use.');
+    if (!errors.isEmpty()) {
+        return res.send(signupTemplate({ req, errors }));
     }
 
-    if (password !== passwordConfirmation) {
-        return res.send('The passwords must match.');
-    }
-
+    const { email, password } = req.body;
     const newUser = await usersRepo.create({ email, password });
     req.session.userId = newUser.id;
-
     res.send("Account created.");
 });
 
@@ -34,23 +36,13 @@ router.get('/signin', (req, res) => {
 });
 
 
-router.post('/signin', async (req, res, next) => {
-    const { email, password } = req.body;
-    const existingUser = await usersRepo.getOneBy({ email });
-    console.log(existingUser);
-    if (!existingUser) {
-        return res.send('Email does not exist.');
-    }
+router.post('/signin', [requireEmailExists, requireValidPassword], async (req, res, next) => {
+    const { email } = req.body;
+    const user = await usersRepo.getOneBy({ email });
 
-    const validPassword = await usersRepo.comparePasswords(existingUser.password, password);
+    req.session.userId = user.id;
 
-    if (!validPassword) {
-        return res.send('Incorrect password.');
-    }
-
-    req.session.userId = existingUser.id;
-
-    res.send("You are signed in.");
+    res.send("You are signed in.")
 });
 
 
