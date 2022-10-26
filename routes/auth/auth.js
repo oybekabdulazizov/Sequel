@@ -18,8 +18,6 @@ router.get('/signup', (req, res) => {
 
 router.post('/signup', [requireEmail, requirePassword, requirePasswordConfirmation], async (req, res, next) => {
     const errors = validationResult(req);
-    console.log(errors);
-
     if (!errors.isEmpty()) {
         return res.send(signupTemplate({ req, errors }));
     }
@@ -37,11 +35,14 @@ router.get('/signin', (req, res) => {
 
 
 router.post('/signin', [requireEmailExists, requireValidPassword], async (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.send(signinTemplate({ req, errors }));
+    }
+
     const { email } = req.body;
     const user = await usersRepo.getOneBy({ email });
-
     req.session.userId = user.id;
-
     res.send("You are signed in.")
 });
 

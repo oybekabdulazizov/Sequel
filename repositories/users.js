@@ -23,7 +23,7 @@ class UsersRepository {
     async create(attributes) {
         attributes.id = this.randomId();
         const salt = this.salt();
-        const hashedPassword = await scrypt(attributes.id, salt, 64);
+        const hashedPassword = await scrypt(attributes.password, salt, 64);
 
         const record = {
             ...attributes, 
@@ -49,10 +49,10 @@ class UsersRepository {
 
 
     async comparePasswords(saved, received) {
-        const [hashes, salt] = saved.split('.');
-        const hashedReceived = await scrypt(received, salt, 64);
+        const [hashedPasswordSaved, salt] = saved.split('.');
+        const hashedPasswordReceived = await scrypt(received, salt, 64);
         
-        return hashes === hashedReceived.toString('hex');
+        return hashedPasswordSaved === hashedPasswordReceived.toString('hex');
     }
 
 

@@ -10,13 +10,13 @@ module.exports = {
         .custom( async (email) => {
             const existingUser = await usersRepo.getOneBy({ email });
             if (existingUser) {
-                throw new Error('Email is already in use.');
+                throw new Error('Email is already in use');
             }
         }),
     requirePassword: check('password')
         .trim()
         .isLength({ min: 8, max: 24 })
-        .withMessage('Must be a between 8 and 24 characters'),
+        .withMessage('Must be between 8 and 24 characters'),
     requirePasswordConfirmation: check('passwordConfirmation')
         .trim()
         .isLength({ min: 8, max: 24})
@@ -24,7 +24,7 @@ module.exports = {
         .custom((passwordConfirmation, { req }) => {
             const { password } = req.body;
             if (passwordConfirmation !== password) {
-                throw new Error('Passwords much match.');
+                throw new Error('Passwords much match');
             } else {
                 return true;
             }
@@ -37,7 +37,7 @@ module.exports = {
         .custom( async (email) => {
             const user = await usersRepo.getOneBy({ email });
             if (!user) {
-                throw new Error('Email not found.');
+                throw new Error('Email not found');
             }
         }), 
     requireValidPassword: check('password')
@@ -47,12 +47,12 @@ module.exports = {
 
             const existingUser = await usersRepo.getOneBy({ email });
             if (!existingUser) {
-                throw new Error('Invalid password.');
+                throw new Error('Invalid password');
             }
             
             const validPassword = await usersRepo.comparePasswords(existingUser.password, password);
             if (!validPassword) {
-                throw new Error('Invalid password.');
+                throw new Error('Invalid password');
             }
         })
 };

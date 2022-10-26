@@ -15,7 +15,7 @@ module.exports = ({ req, errors }) => {
                         <p class="text-danger">${getError(errors, 'email')}</p>
                     </div>
                     <div class="form-floating">
-                        <input name="password" type="password" class="form-control" id="floatingInput" placeholder="Password">
+                        <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Password</label>
                         <p class="text-danger">${getError(errors, 'password')}</p>
                     </div>
@@ -27,14 +27,3 @@ module.exports = ({ req, errors }) => {
         `
     });
 }
-
-/*
-<form method="POST" style="display: none">
-    <h2>Currently signed-in user id: ${req.session.userId}</h2>
-    <input name="email" placeholder="Email address" />
-    <p>${getError(errors, 'email')}</p>
-    <input name="password" placeholder="password" />
-    <p>${getError(errors, 'password')}</p>
-    <button>Sign In!</button>
-</form>
-*/
