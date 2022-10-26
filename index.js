@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session');
 const authRouter = require('./routes/auth/auth');
 
 const app = express();
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieSession({
     keys: ['sequel_movie_commerce_20221000']
