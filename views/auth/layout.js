@@ -37,12 +37,12 @@ module.exports = ({ content }) => {
                                     <a class="nav-link" href="/about">About</a>
                                 </li>
                             </ul>
-                            <ul class=navbar-nav>
+                            <ul class="navbar-nav">
                                 <li>
-                                    <a class="nav-link" href="/signin">Sign in</a>
+                                    <a class="nav-link" href="/signin"><u>Sign in</u></a>
                                 </li>
                                 <li>
-                                    <a id="signup" class="nav-link" href="/signup">Sign up</a>
+                                    <a id="signup" class="nav-link" href="/signup"><u>Sign up</u></a>
                                 </li>
                             </ul>
                         </div>
@@ -50,7 +50,7 @@ module.exports = ({ content }) => {
                 </nav>
             </header>
 
-            <div class="container w-75 px-5 py-5">
+            <div id="content-container"class="container w-75 px-5 py-5">
             ${content}
             </div>
         </body>
