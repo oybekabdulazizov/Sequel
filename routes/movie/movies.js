@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/movies', (req, res) => {
-    console.log("This is the movie router.");
-    res.send();
+const moviesRepo = require('../../repositories/movies');
+
+router.get('/movies', async (req, res) => {
+    const movie = await moviesRepo.getOne('tt0848228');
+    //console.log(movie);
+    res.send(movie);
 });
 
 module.exports = router;
