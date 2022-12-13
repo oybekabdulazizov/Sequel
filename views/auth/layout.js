@@ -45,14 +45,14 @@ module.exports = ({ req, content }) => {
             <body class="admin">
                 <header>
                     <nav id="navbar" class="navbar navbar-expand-lg bg-light">
-                        <div class="container fluid w-50">
+                        <div class="container fluid w-75">
                             <div class="navbar-brand">
                                 <h3 class="title">Sequel</h3>
                             </div>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse fs-6 text" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse fs-5 text" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-6 mb-lg-0">
                                     <li class="nav-item">
                                         <a class="nav-link" href="/">Home</a>
