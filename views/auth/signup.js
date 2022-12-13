@@ -3,6 +3,7 @@ const { getError } = require('../helpers');
 
 module.exports = ({ errors }) => {
     return layout({
+        req, 
         content: `
             <div id="content" class="container w-50">
                 <div class="container mb-3 ps-0">

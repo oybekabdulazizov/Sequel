@@ -5,5 +5,15 @@ module.exports = {
         } catch (er) {
             return '';
         }
+    }, 
+
+    userSignedIn(req) {
+        try{
+            if (req.session.userId) {
+                return true;
+            }
+        } catch(err) {
+            return false;
+        }
     }
 }

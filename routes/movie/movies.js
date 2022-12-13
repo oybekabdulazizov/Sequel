@@ -6,7 +6,7 @@ const moviesIndexTemplate = require('../../views/movie/indexmovie');
 
 router.get('/movies', async (req, res) => {
     const movies = await moviesRepo.getAll();
-    res.send(moviesIndexTemplate({ movies }));
+    res.send(moviesIndexTemplate({ req, movies }));
 });
 
 module.exports = router;
