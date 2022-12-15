@@ -1,4 +1,4 @@
-const { userSignedIn } = require('../helpers');
+const { userSignedIn } = require('./helpers');
 
 module.exports = ({ req, content }) => {
     let signinSignup = ``;

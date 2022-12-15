@@ -1,4 +1,4 @@
-const layout = require('../auth/layout');
+const layout = require('../layout');
 
 module.exports = ({ req, movies }) => {
     let counter = 0;
