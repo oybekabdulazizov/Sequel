@@ -1,8 +1,10 @@
 const express = require('express');
 const axios = require('axios');
 const cookieSession = require('cookie-session');
+
 const authRouter = require('./routes/auth/auth');
 const moviesRouter = require('./routes/movie/movies');
+const homepageRouter = require('./routes/home');
 
 const app = express();
 app.use(express.static('public'));
@@ -12,10 +14,8 @@ app.use(cookieSession({
 }));
 app.use(authRouter);
 app.use(moviesRouter);
+app.use(homepageRouter);
 
-app.get('/', async (req, res) => {
-    res.send('Homepage');
-});
 
 app.listen('3002', () => {
     console.log('Listening...');
