@@ -43,19 +43,19 @@ module.exports = ({ req, content }) => {
             </head>
 
             <body class="admin">
-                <header>
-                    <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+                <header class="layout-navbar">
+                    <nav id="navbar" class="navbar navbar-expand-lg">
                         <div class="container fluid w-75">
                             <div class="navbar-brand">
-                                <h3 class="title">Sequel</h3>
+                                <h3 class="title"><a class="nav-link" href="/">Sequel</a></h3>
                             </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" styles="color: white !important;">
+                                <span class="navbar-toggler-icon" styles="color: white !important;"></span>
                             </button>
-                            <div class="collapse navbar-collapse fs-5 text" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-6 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/">Home</a>
+                                        <a class="nav-link" href="/movies">Movies</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/search">Search</a>
@@ -70,7 +70,7 @@ module.exports = ({ req, content }) => {
                     </nav>
                 </header>
 
-                <div id="content-container"class="container w-75 px-5 py-5">
+                <div id="content-container" class="container w-75 px-5 py-5">
                 ${content}
                 </div>
             </body>
