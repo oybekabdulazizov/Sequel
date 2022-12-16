@@ -47,7 +47,7 @@ body {
 }
 
 #content-container {
-    padding: 4em 1em !important;
+    padding: 1em 1em 2em 1em !important;
 }
 
 .title {
@@ -63,7 +63,7 @@ body {
 .movie-title {
     font-size: 3em;
     text-align: center;
-    margin: 0 0 1em 0 !important;
+    margin: 0 0 .3em 0 !important;
 }
 
 .card {
@@ -83,7 +83,8 @@ body {
 }
 
 .card-title {
-    max-width: 13em;
+    max-width: 12.8em;
+    padding: 0 .5em !important;
     font-size: .9rem !important;
     font-weight: bolder;
     margin: .2em 0 0 0 !important;

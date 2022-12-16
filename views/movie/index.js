@@ -7,7 +7,7 @@ module.exports = ({ req, movies }) => {
             <div class="card">
                 <div class="position-relative">
                     <img src="${movie.Poster}" class="card-img-top" alt="movie-poster">
-                    <span class="badge text-bg-secondary position-absolute top-0 start-0">${movie.Year}</span>
+                    <span class="badge text-bg-success position-absolute top-0 start-0">${movie.Year}</span>
                     <a href="#" class="btn btn-primary add-to-cart position-absolute top-0 end-0">+Add to cart</a>
                 </div>
                 <div class="card-body">
