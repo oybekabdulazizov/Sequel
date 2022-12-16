@@ -73,6 +73,30 @@ module.exports = ({ req, content }) => {
                 <div id="content-container" class="container w-75 px-5 py-5">
                 ${content}
                 </div>
+
+                <footer>
+                    <section class="footer-section">
+                        <div>
+                            <ul class="navbar-nav">
+                                <li><h4>Sequel</h4></li>
+                                <li>Movies</li>
+                                <li>About</li>
+                                <li>Support Us!</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="navbar-nav">
+                                <li><h4>Contact</h4></li>
+                                <li>(+48) 794 311 026</li>
+                                <li>oybek.tulqinovich@gmail.com</li>
+                                <li><a href="https://github.com/oybekabdulazizov" style="color: white;">github/oybekabdulazizov</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <iframe width="400" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312779.9431310756!2d20.781016711291045!3d52.232606289062204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarsaw!5e0!3m2!1sen!2spl!4v1671188783879!5m2!1sen!2spl"></iframe>
+                        </div>
+                    </section>
+                </footer>
             </body>
         </html>
     `;

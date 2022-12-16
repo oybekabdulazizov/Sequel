@@ -5,9 +5,9 @@ module.exports = ({ req, errors }) => {
     return layout({
         req, 
         content: `
-            <div id="content" class="container w-50">
+            <div id="content" class="container main w-50">
                 <div class="container mb-3 ps-0">
-                    <h4 class="ps-0">Sign in</h4>
+                    <h3 class="ps-0">Sign in</h3>
                 </div>
                 <form method="POST">
                     <div>
@@ -22,7 +22,7 @@ module.exports = ({ req, errors }) => {
                             <p class="text-danger">${getError(errors, 'password')}</p>
                         </div>
                         <div class="my-3">
-                            <button class="btn btn-primary mb-3 px-5 w-100">Sign in</button>
+                            <button class="btn btn-primary form-control">Sign in</button>
                         </div>
                     </div>
                 </form>
