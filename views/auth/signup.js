@@ -27,7 +27,7 @@ module.exports = ({ req, errors }) => {
                             <p class="text-danger">${getError(errors, 'passwordConfirmation')}</p>
                         </div>
                         <div class="my-3">
-                            <button class="btn btn-primary form-control">Sign up</button>
+                            <button class="btn btn-primary form-control form-btn">Sign up</button>
                         </div>
                     </div>
                 </form>

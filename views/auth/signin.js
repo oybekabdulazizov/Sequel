@@ -22,7 +22,7 @@ module.exports = ({ req, errors }) => {
                             <p class="text-danger">${getError(errors, 'password')}</p>
                         </div>
                         <div class="my-3">
-                            <button class="btn btn-primary form-control">Sign in</button>
+                            <button class="btn btn-primary form-control form-btn">Sign in</button>
                         </div>
                     </div>
                 </form>
