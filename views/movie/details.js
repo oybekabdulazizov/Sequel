@@ -10,6 +10,7 @@ module.exports = ({ req, movie }) => {
                 </div>
                 <div class="details-body">
                     <ul class="navbar-nav">
+                        <li><h4>Price: $${movie.Price}</h4></li>
                         <li>Title: ${movie.Title}</li>
                         <li>Released: ${movie.Released}</li>
                         <li>Duration: ${movie.Runtime}</li>

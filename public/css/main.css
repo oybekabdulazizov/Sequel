@@ -155,7 +155,7 @@ footer {
 }
 
 .details-body {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 
@@ -183,7 +183,7 @@ footer {
 
 @media (max-width: 1530px) {
     .details-movie-poster {
-        height: 26em;
+        height: 28em;
     }
 
     .details-body {
@@ -191,9 +191,19 @@ footer {
     }
 }
 
-@media (max-width: 1238px) {
+@media (max-width: 1367px) {
     .details-movie-poster {
-        height: 24em;
+        height: 26em;
+    }
+
+    .details-body {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 1251px) {
+    .details-movie-poster {
+        height: 25em;
     }
 
     .details-body {
@@ -217,5 +227,43 @@ footer {
         width: 60%;
         font-size: 1em;
         text-align: center;
+    }
+}
+
+@media (max-width: 948px) {
+    .details-card {
+        height: 110vh !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .details-card {
+        height: 120vh !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .details-movie-poster {
+        height: 16em;
+    }
+
+    .details-card {
+        height: 115vh !important;
+    }
+}
+
+@media (max-width: 475px) {
+    .details-movie-poster {
+        height: 12em;
+    }
+
+    .details-card {
+        height: 125vh !important;
+    }
+}
+
+@media (max-width: 395px) {
+    .details-card {
+        height: 250vh !important;
     }
 }
