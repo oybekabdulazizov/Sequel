@@ -5,6 +5,7 @@ const cookieSession = require('cookie-session');
 const authRouter = require('./routes/auth/auth');
 const moviesRouter = require('./routes/movie/movies');
 const homepageRouter = require('./routes/home');
+const cartsRouter = require('./routes/cart/carts');
 
 const app = express();
 app.use(express.static('public'));
@@ -15,6 +16,7 @@ app.use(cookieSession({
 app.use(authRouter);
 app.use(moviesRouter);
 app.use(homepageRouter);
+app.use(cartsRouter);
 
 
 app.listen('3002', () => {
