@@ -24,7 +24,7 @@ router.post('/cart/movies', async (req, res) => {
         items: cart.items
     });
 
-    res.send("Product added to the cart");
+    res.redirect('/cart');
 }); 
 
 
@@ -41,6 +41,21 @@ router.get('/cart', async (req, res) => {
     }
 
     res.send(cartShowTemplate({ req, items: cart.items }));
+});
+
+
+router.post('/cart/movies/delete', async (req, res) => {
+    console.log(req.body);
+    if (!req.body.imdbID) {
+        return res.send('Movie not found.');
+    }
+
+    const cart = await cartsRepo.getOne(req.session.cartId);
+    const items = cart.items.filter(item => item.imdbID !== req.body.imdbID);
+
+    await cartsRepo.update(cart.id, { items });
+
+    res.redirect('/cart');
 });
 
 

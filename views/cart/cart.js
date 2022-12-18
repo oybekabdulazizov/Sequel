@@ -13,7 +13,8 @@ module.exports = ({ req, items }) => {
                     <h6 class="margin-0">$${item.movie.Price} x ${item.quantity} = </h6>
                     <h5 class="margin-0">&nbsp$${item.movie.Price * item.quantity}</h5>
                     <div style="margin: 0 0 0 .5em;">
-                        <form method="POST">
+                        <form method="POST" action="/cart/movies/delete">
+                            <input hidden value="${item.imdbID}" name="imdbID">
                             <button class="btn btn-danger">
                                 <span>
                                     <i class="fas fa-times"></i>
