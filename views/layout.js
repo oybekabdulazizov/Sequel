@@ -63,6 +63,9 @@ module.exports = ({ req, content }) => {
                                     <li class="nav-item">
                                         <a class="nav-link" href="/about">About</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/cart">Cart</a>
+                                    </li>
                                 </ul>
                                 ${signinSignup}
                             </div>
