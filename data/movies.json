@@ -37,7 +37,8 @@
     "BoxOffice": "$623,357,910",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 34
   },
   {
     "Title": "Avengers: Endgame",
@@ -77,7 +78,8 @@
     "BoxOffice": "$858,373,000",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 36
   },
   {
     "Title": "Avengers: Infinity War",
@@ -117,7 +119,8 @@
     "BoxOffice": "$678,815,482",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 39
   },
   {
     "Title": "Avengers: Age of Ultron",
@@ -157,7 +160,8 @@
     "BoxOffice": "$459,005,868",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 32
   },
   {
     "Title": "The Avengers",
@@ -197,7 +201,8 @@
     "BoxOffice": "$23,384,939",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 34
   },
   {
     "Title": "The Avengers: Earth's Mightiest Heroes",
@@ -226,7 +231,8 @@
     "imdbID": "tt1626038",
     "Type": "series",
     "totalSeasons": "2",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Ultimate Avengers: The Movie",
@@ -258,7 +264,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Ultimate Avengers II",
@@ -290,7 +297,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "The Avengers",
@@ -319,7 +327,8 @@
     "imdbID": "tt0054518",
     "Type": "series",
     "totalSeasons": "7",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Avengers Assemble",
@@ -348,7 +357,8 @@
     "imdbID": "tt2455546",
     "Type": "series",
     "totalSeasons": "4",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "The Dark Knight",
@@ -388,7 +398,8 @@
     "BoxOffice": "$534,987,076",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 41
   },
   {
     "Title": "The Dark Knight Rises",
@@ -428,7 +439,8 @@
     "BoxOffice": "$448,149,584",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 43
   },
   {
     "Title": "Thor: The Dark World",
@@ -468,7 +480,8 @@
     "BoxOffice": "$206,362,140",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 38
   },
   {
     "Title": "Transformers: Dark of the Moon",
@@ -508,7 +521,8 @@
     "BoxOffice": "$352,390,543",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 37
   },
   {
     "Title": "Dark",
@@ -537,7 +551,8 @@
     "imdbID": "tt5753856",
     "Type": "series",
     "totalSeasons": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Zero Dark Thirty",
@@ -577,7 +592,8 @@
     "BoxOffice": "$95,720,716",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 43
   },
   {
     "Title": "Dark Shadows",
@@ -617,7 +633,8 @@
     "BoxOffice": "$79,727,149",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 42
   },
   {
     "Title": "Dark City",
@@ -653,7 +670,8 @@
     "BoxOffice": "$14,378,331",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 41
   },
   {
     "Title": "X-Men: Dark Phoenix",
@@ -693,7 +711,8 @@
     "BoxOffice": "$65,845,974",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 36
   },
   {
     "Title": "Terminator: Dark Fate",
@@ -733,7 +752,8 @@
     "BoxOffice": "$62,253,077",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 35
   },
   {
     "Title": "Spider-Man",
@@ -773,7 +793,8 @@
     "BoxOffice": "$407,022,860",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 32
   },
   {
     "Title": "Spider-Man: No Way Home",
@@ -813,7 +834,8 @@
     "BoxOffice": "$814,115,070",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 31
   },
   {
     "Title": "The Amazing Spider-Man",
@@ -853,7 +875,8 @@
     "BoxOffice": "$262,030,663",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 39
   },
   {
     "Title": "Spider-Man: Homecoming",
@@ -893,7 +916,8 @@
     "BoxOffice": "$334,201,140",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 33
   },
   {
     "Title": "Spider-Man 2",
@@ -933,7 +957,8 @@
     "BoxOffice": "$373,585,825",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 43
   },
   {
     "Title": "Spider-Man 3",
@@ -973,7 +998,8 @@
     "BoxOffice": "$336,530,303",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 38
   },
   {
     "Title": "Spider-Man: Into the Spider-Verse",
@@ -1013,7 +1039,8 @@
     "BoxOffice": "$190,241,310",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 45
   },
   {
     "Title": "The Amazing Spider-Man 2",
@@ -1053,7 +1080,8 @@
     "BoxOffice": "$202,853,933",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 36
   },
   {
     "Title": "Spider-Man: Far from Home",
@@ -1093,7 +1121,8 @@
     "BoxOffice": "$390,532,085",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 34
   },
   {
     "Title": "Spider-Man: The Animated Series",
@@ -1122,7 +1151,8 @@
     "imdbID": "tt0112175",
     "Type": "series",
     "totalSeasons": "5",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Iron Man",
@@ -1162,7 +1192,8 @@
     "BoxOffice": "$319,034,126",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 31
   },
   {
     "Title": "Iron Man 3",
@@ -1202,7 +1233,8 @@
     "BoxOffice": "$409,013,994",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 31
   },
   {
     "Title": "Iron Man 2",
@@ -1242,7 +1274,8 @@
     "BoxOffice": "$312,433,331",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 41
   },
   {
     "Title": "Tetsuo: The Iron Man",
@@ -1278,7 +1311,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "The Invincible Iron Man",
@@ -1310,7 +1344,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Iron Man: Rise of Technovore",
@@ -1342,7 +1377,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Iron Man: Armored Adventures",
@@ -1371,7 +1407,8 @@
     "imdbID": "tt0837143",
     "Type": "series",
     "totalSeasons": "2",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Iron Man",
@@ -1400,7 +1437,8 @@
     "imdbID": "tt0115218",
     "Type": "series",
     "totalSeasons": "1",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Iron Man & Hulk: Heroes United",
@@ -1432,7 +1470,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Iron Man",
@@ -1464,7 +1503,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Clear and Present Danger",
@@ -1504,7 +1544,8 @@
     "BoxOffice": "$122,187,717",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 45
   },
   {
     "Title": "Danger Close",
@@ -1540,7 +1581,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Danger: Diabolik",
@@ -1576,7 +1618,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Gimme Danger",
@@ -1616,7 +1659,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Henry Danger",
@@ -1645,7 +1689,8 @@
     "imdbID": "tt3596174",
     "Type": "series",
     "totalSeasons": "5",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Green for Danger",
@@ -1681,7 +1726,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Danger One",
@@ -1713,7 +1759,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Danger 5",
@@ -1742,7 +1789,8 @@
     "imdbID": "tt1807165",
     "Type": "series",
     "totalSeasons": "2",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Nativity 2: Danger in the Manger!",
@@ -1778,7 +1826,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Danger Mouse",
@@ -1807,7 +1856,8 @@
     "imdbID": "tt0081848",
     "Type": "series",
     "totalSeasons": "1",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "The Boys",
@@ -1836,7 +1886,8 @@
     "imdbID": "tt1190634",
     "Type": "series",
     "totalSeasons": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Bad Boys",
@@ -1876,7 +1927,8 @@
     "BoxOffice": "$65,807,024",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 34
   },
   {
     "Title": "Bad Boys II",
@@ -1916,7 +1968,8 @@
     "BoxOffice": "$138,608,444",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 39
   },
   {
     "Title": "Bad Boys for Life",
@@ -1956,7 +2009,8 @@
     "BoxOffice": "$206,305,244",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 45
   },
   {
     "Title": "The Lost Boys",
@@ -1996,7 +2050,8 @@
     "BoxOffice": "$32,315,444",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 31
   },
   {
     "Title": "To All the Boys I've Loved Before",
@@ -2036,7 +2091,8 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Boys Don't Cry",
@@ -2076,7 +2132,8 @@
     "BoxOffice": "$11,540,607",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 41
   },
   {
     "Title": "Good Boys",
@@ -2112,7 +2169,8 @@
     "BoxOffice": "$83,140,306",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 32
   },
   {
     "Title": "Wonder Boys",
@@ -2152,7 +2210,8 @@
     "BoxOffice": "$19,393,557",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 36
   },
   {
     "Title": "Trailer Park Boys",
@@ -2181,7 +2240,8 @@
     "imdbID": "tt0290988",
     "Type": "series",
     "totalSeasons": "11",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Batman Begins",
@@ -2221,7 +2281,8 @@
     "BoxOffice": "$206,863,479",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 44
   },
   {
     "Title": "Batman v Superman: Dawn of Justice",
@@ -2261,7 +2322,8 @@
     "BoxOffice": "$330,360,194",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 35
   },
   {
     "Title": "The Batman",
@@ -2301,7 +2363,8 @@
     "BoxOffice": "$369,345,583",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 31
   },
   {
     "Title": "Batman",
@@ -2341,7 +2404,8 @@
     "BoxOffice": "$251,409,241",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 36
   },
   {
     "Title": "Batman Returns",
@@ -2381,7 +2445,8 @@
     "BoxOffice": "$162,924,631",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 32
   },
   {
     "Title": "Batman & Robin",
@@ -2421,7 +2486,8 @@
     "BoxOffice": "$107,353,792",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 36
   },
   {
     "Title": "Batman Forever",
@@ -2461,7 +2527,8 @@
     "BoxOffice": "$184,069,126",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 41
   },
   {
     "Title": "The Lego Batman Movie",
@@ -2501,7 +2568,8 @@
     "BoxOffice": "$175,936,671",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 42
   },
   {
     "Title": "Batman: The Animated Series",
@@ -2530,7 +2598,8 @@
     "imdbID": "tt0103359",
     "Type": "series",
     "totalSeasons": "3",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   },
   {
     "Title": "Batman v Superman: Dawn of Justice (Ultimate Edition)",
@@ -2562,6 +2631,7 @@
     "BoxOffice": "N/A",
     "Production": "N/A",
     "Website": "N/A",
-    "Response": "True"
+    "Response": "True",
+    "Price": 10
   }
 ]
