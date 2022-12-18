@@ -1,7 +1,6 @@
 const layout = require('../layout');
 
 module.exports = ({ req, movie }) => {
-    console.log(movie);
     return layout({
         req, 
         content: `
@@ -23,7 +22,7 @@ module.exports = ({ req, movie }) => {
                         <li>Writer: ${movie.Writer}</li>
                         <li>Country: ${movie.Country}</li>
                         <li>Awards: ${movie.Awards}</li>
-                        <li></li>
+                        <li>Box Office: ${movie.BoxOffice}</li>
                         <br/>
                         <li>Plot: <i>${movie.Plot}</i></li>
                     </ul>
