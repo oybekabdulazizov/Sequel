@@ -3,6 +3,7 @@ const router = express.Router();
 const cartsRepo = require('../../repositories/carts');
 const moviesRepo = require('../../repositories/movies');
 const cartShowTemplate = require('../../views/cart/cart');
+const buyCompleteView = require('../../views/cart/buycomplete');
 
 
 router.post('/cart/movies', async (req, res) => {
@@ -45,7 +46,6 @@ router.get('/cart', async (req, res) => {
 
 
 router.post('/cart/movies/delete', async (req, res) => {
-    console.log(req.body);
     if (!req.body.imdbID) {
         return res.send('Movie not found.');
     }
@@ -56,6 +56,22 @@ router.post('/cart/movies/delete', async (req, res) => {
     await cartsRepo.update(cart.id, { items });
 
     res.redirect('/cart');
+});
+
+
+router.post('/cart/buy', async (req, res) => {
+    if (!req.session.cartId) {
+        return res.send('Error occurred. Please try again.');
+    }
+
+    const cart = await cartsRepo.getOne(req.session.cartId);
+    if (cart.items.length < 1) {
+        return res.redirect('/cart');
+    }
+    const items = [];
+    await cartsRepo.update(cart.id, { items });
+
+    res.send(buyCompleteView({ req }));
 });
 
 

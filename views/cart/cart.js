@@ -40,7 +40,11 @@ module.exports = ({ req, items }) => {
                     </div>
                 </div>
                 <div style="display: flex; justify-content: end;">
-                    <button class="btn btn-primary px-4 py-2"><h4 class="margin-0">Buy</h4></button>
+                    <div>
+                        <form method="POST" action="/cart/buy">
+                            <button class="btn btn-primary px-4 py-2"><h4 class="margin-0">Buy</h4></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         `
