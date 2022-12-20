@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const aboutView = require('../views/about');
+const aboutView = require('../../views/about/about');
 
 
 router.get('/about', async (req, res) => {
