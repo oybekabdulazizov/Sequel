@@ -15,7 +15,7 @@ router.get('/search', async (req, res) => {
 router.post('/search',
     [requireSearchterm],
     handleErrors(searchFormTemplate),
-    async (req, res, next) => {
+    async (req, res) => {
     
     const { searchterm } = req.body;
     const allMovies = await moviesRepo.getAll();

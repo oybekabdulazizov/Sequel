@@ -1,5 +1,6 @@
 const { check } = require('express-validator');
 const usersRepo = require('../../repositories/users');
+const moviesRepo = require('../../repositories/movies');
 
 module.exports = {
     requireEmail: check('email')
@@ -61,6 +62,22 @@ module.exports = {
             if (searchterm.length < 1) {
                 throw new Error('Searchterm is required');
             }
+            
+            const allMovies = await moviesRepo.getAll();
+            const searchtermWords = searchterm.split(' ');
+            let searchResult = [];
+            for (let movie of allMovies) {
+                for (let word of searchtermWords) {
+                    if (movie.Title.toLowerCase().includes(word)) {
+                        searchResult.push(movie);
+                    }
+                }
+            }
+
+            if (searchResult.length < 1) {
+                throw new Error('Invalid search term')
+            }
+
             return true;
         })
         
