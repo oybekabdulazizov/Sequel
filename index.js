@@ -3,7 +3,7 @@ const cookieSession = require('cookie-session');
 
 const authRouter = require('./routes/auth/auth');
 const moviesRouter = require('./routes/movie/movies');
-const homepageRouter = require('./routes/home');
+const homepageRouter = require('./routes/home/home');
 const cartsRouter = require('./routes/cart/carts');
 const aboutRouter = require('./routes/about/about');
 const searchRouter = require('./routes/search');

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const home = require('../views/home'); 
+const home = require('../../views/home/home'); 
 
 
 router.get('/', async (req, res) => {
