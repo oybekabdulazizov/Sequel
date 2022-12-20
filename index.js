@@ -5,6 +5,7 @@ const authRouter = require('./routes/auth/auth');
 const moviesRouter = require('./routes/movie/movies');
 const homepageRouter = require('./routes/home');
 const cartsRouter = require('./routes/cart/carts');
+const aboutRouter = require('./routes/about');
 
 const app = express();
 app.use(express.static('public'));
@@ -16,6 +17,7 @@ app.use(authRouter);
 app.use(moviesRouter);
 app.use(homepageRouter);
 app.use(cartsRouter);
+app.use(aboutRouter);
 
 
 app.listen('3002', () => {
