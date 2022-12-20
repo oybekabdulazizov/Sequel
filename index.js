@@ -23,5 +23,5 @@ app.use(searchRouter);
 
 
 app.listen('3002', () => {
-    console.log('Listening...');
+    console.log('Running...');
 });

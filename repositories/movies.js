@@ -26,14 +26,6 @@ class MoviesRepository {
     }
 
 
-    // should be accessible only by admins
-    async delete(imdbID) {
-        const records = await this.getAll();
-        const filteredRecords = records.filter(record => record.imdbID !== imdbID);
-        await this.writeAll(filteredRecords);
-    }
-
-
     async writeAll(records) {
         await fs.promises.writeFile(this.filename, JSON.stringify(records, null, 2));
     }
