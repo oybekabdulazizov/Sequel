@@ -54,5 +54,14 @@ module.exports = {
             if (!validPassword) {
                 throw new Error('Invalid password');
             }
+        }), 
+    requireSearchterm: check('searchterm')
+        .trim()
+        .custom(async (searchterm) => {
+            if (searchterm.length < 1) {
+                throw new Error('Searchterm is required');
+            }
+            return true;
         })
+        
 };
