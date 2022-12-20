@@ -6,7 +6,7 @@ const moviesRouter = require('./routes/movie/movies');
 const homepageRouter = require('./routes/home/home');
 const cartsRouter = require('./routes/cart/carts');
 const aboutRouter = require('./routes/about/about');
-const searchRouter = require('./routes/search');
+const searchRouter = require('./routes/search/search');
 
 const app = express();
 app.use(express.static('public'));

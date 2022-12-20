@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const { handleErrors } = require('./auth/middleware');
-const { requireSearchterm } = require('./auth/validators');
-const moviesRepo = require('../repositories/movies');
-const searchFormTemplate = require('../views/searchForm');
-const searchIndex = require('../views/searchIndex');
+const { handleErrors } = require('../auth/middleware');
+const { requireSearchterm } = require('../auth/validators');
+const moviesRepo = require('../../repositories/movies');
+const searchFormTemplate = require('../../views/search/searchForm');
+const searchIndex = require('../../views/search/searchIndex');
 
 
 router.get('/search', async (req, res) => {

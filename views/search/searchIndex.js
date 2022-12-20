@@ -1,4 +1,4 @@
-const layout = require('./layout');
+const layout = require('../layout');
 
 module.exports = ({ req, searchResult }) => {
     const renderedSearchResult = searchResult.map((searchResult) => {
@@ -28,9 +28,11 @@ module.exports = ({ req, searchResult }) => {
     return layout({ 
         req, 
         content: `
-            <h1 class="movie-title">Search Result:</h1>
-            <div class="movie-container">
-                ${renderedSearchResult}
+            <div class="main">
+                <h1 class="movie-title">Search Result:</h1>
+                <div class="movie-container">
+                    ${renderedSearchResult}
+                </div>
             </div>
         ` 
     })
