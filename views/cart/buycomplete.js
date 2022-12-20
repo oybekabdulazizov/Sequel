@@ -1,4 +1,4 @@
-const layout = require('../layout');
+const layout = require('../utilities/layout');
 
 module.exports = ({ req }) => {
     return layout({

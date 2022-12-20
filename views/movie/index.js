@@ -1,5 +1,5 @@
 const e = require('express');
-const layout = require('../layout');
+const layout = require('../utilities/layout');
 
 module.exports = ({ req, movies }) => {
     const renderedMovies = movies.map((movie) => {

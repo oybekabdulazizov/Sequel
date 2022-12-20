@@ -1,4 +1,4 @@
-const layout = require('../layout');
+const layout = require('../utilities/layout');
 
 module.exports = ({ req, items }) => {
     let totalPrice = items.reduce((prev, item) => {
