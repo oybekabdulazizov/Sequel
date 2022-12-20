@@ -5,7 +5,7 @@ module.exports = ({ req }) => {
         req, 
         content: `
             <div class="main" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <h2 class="mb-4">About</h2>
+                <h1 class="mb-4">About</h1>
                 <h5>
                     Sequel is an e-commerce webshop where you can find movies you love, find out more about them, and purchase original 
                     CDs of them. 

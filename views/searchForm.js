@@ -7,7 +7,7 @@ module.exports = ({ req, errors }) => {
         content: `
             <div class="main container w-50" id="content">
                 <div class="container mb-3">
-                    <h3 class="ps-0">Search</h3>
+                    <h1 class="ps-0">Search</h1>
                 </div>
                 <form method="POST">
                     <div class="mb-3 text-secondary">

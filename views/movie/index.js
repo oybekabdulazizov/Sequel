@@ -21,12 +21,11 @@ module.exports = ({ req, movies }) => {
                     <div class="card-body">
                         <p class="card-title d-inline-block text-truncate" database-bs-toggle="tooltip" databse-bs-placement="bottom" title="${movie.Title}">${movie.Title}</p>
                         <div style="display: flex; justify-content: space-between;">
-                            <p class="card-title d-inline-block">$${price}</p>
+                            <p class="card-title d-inline-block">$${movie.Price}</p>
                             <div style="width: 44.2%;">
                                 <form action="/cart/movies" method="POST"">
                                     <button class="btn btn-primary add-to-cart">Add to cart</button>
                                     <input hidden value="${movie.imdbID}" name="imdbID" />
-                                    <input hidden value="${price}" name="price" />
                                 </form>
                             </div>
                         </div>
